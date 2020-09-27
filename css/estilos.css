@@ -1,0 +1,618 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik"; /*Fuente del sitio*/
+}
+
+/****************************** ESTILOS DEL ENCABEZADO **********************************/
+
+
+/*IMAGEN Y TITULO PRINCIPAL*/
+.imgppal{ /*Afecta al borde de la imagen del encabezado*/
+	border-radius: 30px; 
+    border-color: rgba(0,53,158,0.75); 
+    border-width: 10px; 
+	border-style: solid; 
+}
+.titulo{/*Afecta al título del encabezado*/
+	display: inline;
+	padding-left: 1%;
+	vertical-align: 100%;
+	font-size: 2vw;
+	color:white;
+	animation-name: animacion_titulo;
+	animation-duration: 4s;
+}
+
+/****************************** CONTENEDOR Y BOTONES DE NAVEGACION ******************************/
+.contenedor .nav, 
+.contenedor-prof .nav {/*Afecta a las barras de navegación de los contenedores*/
+	display: flex;
+	grid-area: nav;
+	width: 100%;
+	max-width: 100%;
+}
+
+.botnav, .botnav-menu {/*Afecta a los botones de navegación*/
+	color: rgb(210,210,255);
+	background-color:#002060;
+	border-style: solid;
+	border-color: rgba(0,53,158,0.75);
+	border-width: 4px; 
+	border-radius: 5px;
+	font-weight: bold; 
+    text-decoration: none; 
+	padding: 5px;
+	width: 100%;
+	margin: 0px 5px 0px;
+	display: flex;
+	text-align: center;
+    justify-content: center;
+	align-items: center;
+	/*Transiciones para los botones*/
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.botnav-menu{/*Afecta al botón Menú*/
+	font-size: 3vw;
+	display: none;
+}
+
+a:hover{/*Cuando se pasa el mouse por arriba...*/
+	background-color: white;
+	color:#002060;
+	border-color: rgba(0,53,158,0.75);
+	/*Transiciones para los botones*/
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	/*Transformaciones para los botones*/
+	transform:translate(5px, 5px);
+}
+
+a:active{/*Cuando se hace clic sobre el botón...*/
+	background-color: rgb(180,180,255);
+	color:#002060;
+	border-color: #002060;
+	/*Transiciones para los botones*/
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+/****************************** ETIQUETAS COMUNES (cuerpo, h, p, div) ******************************/
+body { /*Afecta al cuerpo de la página*/
+	background: #b7c6ee;
+	color: #000;
+}
+h1{ /*Afecta a los tìtulos principales*/
+	color:#002060;
+	padding-bottom: 1%;
+}
+h2{ /*Afecta a los subtìtulos principales*/
+	color:#002060;
+	border-bottom-color: #002060;
+	border-bottom-width: 1xp;
+	border-bottom-style: solid;
+	background: rgba(0,53,158,0.25);
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+}
+h4{/*Afecta a los tìtulos de info adicional*/
+	color: #002060;
+	background-color:rgb(210,210,255);
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	text-align: center;
+	border-color: rgb(210,210,255);
+	border-style: dotted;
+}
+h3 p{/*Afecta a los subtìtulos h3 que contengan pàrrafos*/
+	color: #002060;
+	padding-bottom: 7.5%;
+	text-align: center;
+	font-weight: bold;	
+}
+
+p{ /*Espaciado inferior para párrafos*/
+	padding-bottom: 1%;	
+	font-size: 1.2vw;
+}
+
+p > strong { /*Texto resaltado de los párrafos*/
+	color: #002060;
+	font-style: italic;
+}
+
+hr{/*Afecta a los hr de info adicional*/
+	border: 2px solid rgb(210,210,255);
+	border-radius: 100px/20px;
+	height: 0px;
+	text-align: center;
+}
+
+div .mapa{/*Afecta la mapa de "Contacto"*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	border-style: solid;
+	border-color: #002060;
+	border-width: 5px;
+	border-radius: 5px;	
+}
+
+/********************************************** CLASES E IDS ********************************************/
+
+.img-conborde{/*Afecta a las imàgenes de Princupales clientes*/
+	border-style: solid;
+	border-color: #002060;
+	padding: 3px;
+	border-width: 5px;
+	border-radius: 5px;
+	height: 70%;
+	width: 70%;
+	margin-bottom: 10px;
+}
+
+.subtitulo2{/*Afecta a los subtìtulos de Académica */
+	color: #002060;
+	font-weight: bold;
+	border-bottom-width: 1xp;
+	border-bottom-style: solid;	
+}
+
+.vinietas_otroscursos, .vinietas_otroscursos1, .vinietas_otroscursos2{
+	/*Afecta a todas las viñetas de Académica y Servicios*/
+	color: #002060;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.vinietas_otroscursos, .vinietas_otroscursos1{/*Márgenes*/
+	margin-left: 50px;
+}
+.vinietas_otroscursos1{/*Afecta a las viñetas principales de Servicios*/
+	font-weight: bold;
+}
+.vinietas_otroscursos2{/*Afecta a las viñetas secundarias de Servicios*/
+	margin-left: 75px;
+}
+
+.trabajos{/*Para la imagen "trabajos" de Profesional*/
+	padding: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.columna1 {/*Primer columna de "Profesional"*/
+	float: left;
+	width: 70%;
+}
+.columna2 {/*Segunda columna de "Profesional"*/
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+.columna2 a:hover{ /*Imágenes con vínculos - Segunda columna de "Profesional"*/
+	background: white;
+}
+
+#infoadicional-titulo{/*Afecta los subtítulos principales de info adicional*/
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	color:rgb(210,210,255);
+	font-weight: bold;
+	text-align: center;
+}
+
+#infoadicional-titulo2{/*Afecta los subtìtulos del info adicional (servicios)*/
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color:rgb(210,210,255);
+	font-weight: bold;
+	text-align: left;
+}
+
+#infoadicional-cuerpo{/*Afecta al cuerpo principal de info adicional*/
+	color:rgb(210,210,255);
+	font-style: italic;
+	text-align: left;
+}
+
+#infoadicional-cuerpo-vinietas{/*Afecta a las viñetas de info adicional*/
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-left: 15px;
+	color:rgb(210,210,255);
+	font-style: italic;
+	text-align: left
+}
+
+#infoadicional-vinculos	{/*Afecta a los vìnculos a Sitios Web de info adicional*/
+	color:rgb(210,210,255);
+	padding: 5px;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/******************************* Formulario de contacto *******************************/
+label, .texto_formulario{ /*Etiquetas y otros textos*/
+	color: #002060;
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: left;
+}
+
+input, textarea, select
+{/*textos internos de las cajas de texto y combobox*/
+	color: #002060;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.boton-input{/*Para agrandar el botón*/
+	padding: 10px;
+	/*Ver como alinearlo a la derecha*/
+}
+
+.enlaces-contacto a:hover{background: none;}/*Para los links de la página Contacto*/
+
+/****************************** CONTENEDORES GENERALES ******************************/
+
+.contenedor .contenido, .contenedor-prof .contenido{/*Fondo del contenedor principal*/
+	background: #fff;
+}
+
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .info_adicional,
+.contenedor .footer, 
+.contenedor-prof .header,
+.contenedor-prof .contenido,
+.contenedor-prof .info_adicional,
+.contenedor-prof .footer{/*Otros contenedores*/
+	padding: 15px;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+.contenedor .header,
+.contenedor .footer,
+.contenedor .info_adicional,
+.contenedor-prof .header,
+.contenedor-prof .info_adicional,
+.contenedor-prof .footer
+{/*Otros contenedores*/
+	background: #002060;
+	color: #fff;
+}
+
+.contenedor .header,
+.contenedor-prof .header {
+	grid-area: header;
+}
+.contenedor .contenido, .contenedor-prof .contenido {
+	grid-area: contenido;
+}
+.contenedor .footer,
+.contenedor-prof .footer{
+	grid-area: footer;
+	text-align: center;
+}
+.contenedor .info_adicional {
+	grid-area: info_adicional;
+	grid-column: 2 / 3;
+    display: inline;	
+}
+.contenedor-prof .info_adicional {
+	grid-column: 2 / 3;
+	display: inline;
+	grid-area: info_adicional;
+}
+
+/****************************** CONTENEDORES ESPECÍFICOS ******************************/
+.contenedor-academica{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.contenedor-index{
+	display: flex;
+	justify-content: space-around;
+}
+.contenedor-index-columna1 {width: 65%;}
+.contenedor-index-columna2 {width: 30%;}
+
+.contenedor-servicios{
+	display: flex;
+	justify-content: space-around;
+}
+.contenedor-servicios-columna1 {width: 75%;}
+.contenedor-servicios-columna2 {width: 20%;}
+
+.contenedor-contacto{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contenedor-contacto-columna1 {width: 60%;}
+.contenedor-contacto-columna2 {width: 40%;}
+
+/*************************** CONTENEDORES Y CAJAS ESPECÍFICOS DE ACADÉMICA ****************************/
+.caja{
+	background-color: #b7c6ee;
+	border: solid;
+	border-color: #002060;
+	padding: 1%;
+	width: 70%;
+	text-align: center;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.caja1-columna1 {
+	float: left;
+	width: 30%;
+	margin-top: 10px;
+  }
+
+.caja1-columna2 {
+	float: left;
+	width: 70%;
+  }
+
+.caja2-columna1 {
+	float: left;
+	width: 30%;
+	margin-top: 20px;	
+  }
+
+.caja2-columna2 {
+	float: left;
+	width: 70%;
+  }
+
+.gran-titulo-caja{
+	background-color: #002060;
+	font-weight: bold;
+	color: #b7c6ee;
+	padding: 10px;
+	width: 95%;
+	border-radius: 10px;
+}
+
+.titulo-caja{
+	text-align: left;
+	font-weight: bold;
+	color: #002060;
+	padding: 10px 0px;
+	margin-left: 10px;
+}
+
+.subtitulo-caja{
+	text-align: left;
+	font-style: italic;
+	color: #002060;
+	padding-bottom: 5px;
+	margin-left: 10px;
+}
+
+.caja-parrafo{
+	text-align: left;
+	margin-left: 10px;
+}
+
+.img-caja{
+	border-radius: 30px; 
+    border-color: #002060;
+    border-width: 5px;
+	border-style: solid;
+}
+.img-caja2{
+	border-radius: 10px;
+    border-color: #002060;
+    border-width: 5px; 
+	border-style: solid;
+}
+.caja-analitico-parrafo{
+	text-align: right;
+	font-style: italic;
+}
+.caja-analitico-link{
+	text-decoration: none;
+}
+
+.caja-analitico-parrafo a:hover,
+.caja-analitico-parrafo a:link,
+.caja-analitico-parrafo a:active{
+	background: none;
+	color: #002060;
+}
+
+/*Vìnculos del pie de la página*/
+.footer a:hover{background: none;}
+.footer a:visited{color: gray;}
+.footer a:link{color: white;}
+
+.texto-derecha{/*Alineación vìnculos info adicional de "Académica"*/
+	text-align: right;
+}
+.img-centrada{/*Alinea imágenes de info adicional*/
+	text-align: center;
+}
+
+/*************** ACADEMNICA - ACTUAIDAD *********************/
+.contenedor-actualidad{
+	display: block;
+	justify-content: flex-start;
+	width: auto;
+}
+
+.caja-actualidad{
+	background-color: #e8ebf3;
+	border: solid;
+	border-color: #002060;
+	padding: 1%;
+	width: auto;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.caja-actualidad-columna1 {
+	float: left;
+	width: 10%;
+  }
+
+.caja-actualidad-columna2 {
+	float: left;
+	width: 90%;
+  }
+ 
+/****************************** TABLA DE SERVICIOS**********************************/
+div table{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+table {/*Afecta a toda la tabla*/
+	width: 85%;
+	border: 3px solid #002060;
+	border-spacing: 0;
+}
+table td:first-child {/*Afecta a la columna 1*/
+	width: 25%;
+	color: #002060;
+	font-weight: bold;
+	text-align: center;
+	border-right: #002060;
+	border-right-style: solid;
+	border-right-width: 0.5px;
+}
+table td:nth-child(2) {/*Afecta a la columna 2*/
+	width: 5%;
+	text-align: center;
+}
+table td:last-child {/*Afecta a la última*/
+	width: 45%;
+	padding-right: 10px;
+}
+table td, table th{/*paddings para todas celdas de la tabla*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+table tr:first-child {/*Primer fila (encabezado)*/
+	background: rgba(0,53,158,0.5);
+	text-align: center;
+	vertical-align: middle;
+	color: #002060;
+}
+  
+.encabezado-tabla{/*Encabezado de la tabla*/
+	 border-bottom: #002060;
+	 border-bottom-style: solid;
+	 border-right: #002060;
+	 border-right-style: solid;
+	 border-right-width: 0.5px;
+ }
+
+/*Estilo cebra*/ 
+table tr:nth-child(2n+1) {background: rgba(0,53,158,0.25);}
+table tr:nth-child(2n+2) {background: rgba(0,53,158,0.10);}
+
+/*Animaciones*/
+@keyframes animacion_titulo{
+	from {color: #002060;}
+	to {color: white;}
+}
+
+/****************************** MEDIA QUERIES ******************************/
+
+/* ESTILOS NORMALES (para escritorios muy grandes)*/
+@media screen and (min-width: 1200px){
+	.contenedor, .contenedor-prof {
+		width: 100%;
+		max-width: 1500px;
+		margin: 10px auto;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 80% 20%;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "header header"
+							"nav nav"					 
+							"contenido info_adicional"
+							"footer footer";
+	}
+	.contenedor-prof { /*solo para profesional xq quedaba muy larga*/
+		grid-template-columns: 75% 25%;	
+	}
+}
+
+/* Tablets en horizonal y escritorios normales*/
+@media (min-width: 800px) and (max-width: 1199px) {
+	.contenedor, .contenedor-prof {
+		width: 100%;
+		max-width: 1199px;
+		margin: 5px auto;
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: 80% 20%;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "header header"
+							"nav nav"					 
+							"contenido info_adicional"
+							"footer footer";
+	}
+	.contenedor-prof { /*solo para profesional xq quedaba muy larga*/
+		grid-template-columns: 75% 25%;	
+	}
+}
+
+/* Móviles en horizontal o tablets en vertical*/
+@media (min-width: 440px) and (max-width: 799px) {
+	.contenedor, .contenedor-prof {
+		grid-template-areas: "header header"
+							"nav nav"
+						 	"contenido contenido"
+						 	"info_adicional info_adicional"
+						 	"footer footer";
+	}
+	.contenedor .nav, .contenedor-prof .nav{
+
+		flex-direction: column;
+	}
+	.botnav-menu{
+		display: inline-block;
+		color: #002060;
+		background-color:rgb(210,210,255);
+	}
+	.desaparecer{
+		display: none;
+	}
+}
+
+/* Móviles en vertical*/
+@media (max-width: 439px) {
+	.contenedor, .contenedor-prof {
+		grid-template-areas: "header header"
+							"nav nav"
+						 	"contenido contenido"
+						 	"info_adicional info_adicional"
+						 	"footer footer";
+	}
+	.contenedor .nav, .contenedor-prof .nav{
+		flex-direction: column;
+	}
+	.botnav-menu{
+		display: inline-block;
+		color: #002060;
+		background-color:rgb(210,210,255);
+	}
+	.desaparecer{
+		display: none;
+	}
+}
