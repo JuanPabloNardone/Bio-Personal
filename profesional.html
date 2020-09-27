@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/cf1a0b0945.js" crossorigin="anonymous"></script>
+    <title>J. P. Nardone - Bio - Profesional</title>
+</head>
+
+<body>
+    <div class="contenedor-prof">
+        <!----------------------------------------- Encabezado ----------------------------------------->
+        <header class="header">
+            <div>
+                <img class="imgppal" src="imgs/jpn.png" alt="Juan Pablo Nardone" height="7%" width="7%">
+                <h1 class="titulo">Juan Pablo Nardone Fernández - Bio personal</h1>
+            </div>  
+        </header>
+        <!------------------------------------- Barra de navegación ------------------------------------->
+        <nav class="nav">
+            <button class="botnav-menu" onclick="mostrarocultar()">Menú</button>
+            <a class="botnav desaparecer" href="index.html">Inicio</a>
+            <a class="botnav desaparecer" href="academica.html">Formación académica</a>
+            <a class="botnav desaparecer" href="profesional.html">Desarrollo profesional</a>
+            <a class="botnav desaparecer" href="servicios.html">Servicios</a>
+            <a class="botnav desaparecer" href="contacto.html">Contacto</a>
+        </nav>
+        <!------------------------------------- Cuerpo principal ---------------------------------------->
+        <main class="contenido">
+            <!------------------------------------- Introducción ---------------------------------------->
+            <h1>Desarrollo profesional</h1>
+            <p>
+                Mi trayectoria profesional está dividida en dos partes: por un lado me desempeño como docente en colegios y capacitador en empresas y por otra parte trabajo como consultor y desarrollador freelance de soluciones automatizadas con Macros en Excel. 
+            </p>
+            <br>
+            <!------------------------------------- Docente y capacitador (texto / foto / texto) --------->
+            <h2>Docente y capacitador</h2>
+            <br>
+            <p>
+                Desde el año 2012 me desempeño como docente de <b>Educación Tecnológica</b> y <b>Tecnologías de la Información</b> en el <strong>Colegio Marianista de Caballito</strong> (nivel secundario), y desde el año 2014 soy docente de <b>Informática</b> en el <strong>Instituto Nuestra Señora de Las Nieves</strong>, en Liniers (nivel primario). Además, trabajo desde el año 2017 en la <strong>Fundación Gutenberg</strong>  como docente de <b>Informática</b>, en la carrera <i>Gestión de Procesos Gráficos y Digitales</i>.
+                <div><img class="trabajos" src="imgs/trabajos.png" alt="Trabajos de Juan Pablo" width="100%" height="100%"></div>
+            </p>
+            <p>
+                He trabajado como docente en el <strong>Instituto Argentino de computación (IAC)</strong> entre los años 2007 y 2010, dentro del curso <b>Operador Office Full</b>, en las filiales Liniers y Pompeya.
+            </p>
+            <p>
+                Como capacitador en empresas doy regularmente cursos de Microsoft Excel <i> in company </i> y a distancia. Entre las empresas más destacadas con las que he trabajado se encuentran <strong>Kantar Worldpanel Argentina</strong>, <strong>TNS Gallup</strong> (empresas dedicadas a la investigación de mercado) y <strong>SueldosRH</strong> (consultora especializada en tercerización/outsourcing de liquidación de haberes y administración de personal).
+            </p>
+            <br>
+            <!------------------------------------- Consultor y desarrollador ------------------------->
+            <h2>Consultor y desarrollador</h2>
+            <br>
+            <div>
+                <!------------------------------------- Texto / Video | Enlaces ------------------------>
+                <div class="columna1">
+                    <p>
+                        En el área de consultoría para empresas me he especializado en orientar a la pequeñas y grandes empresas que deciden mejorar la implementación de las planillas de cálculo en su actividad diaria. Además de la consultoría ofrezco soluciones automatizadas con <strong>Macros en Excel</strong>, las cuales consisten en programar instrucciones a través de VBA (<i>Visual Basic para Aplicaciones</i>) para que la planilla realice de manera automática las tareas que con cierta periodicidad el cliente realiza manualmente.
+                    </p>
+                    <p>
+                        Partiendo de la premisa “automatizar es invertir”, se estudian los procesos que se llevan a cabo en tareas de elaboración de informes estadísticos y de gestión, carga de datos y tablas calculadas, sobre la base de que todo lo que se realiza manualmente puede automatizarse, optimizando el tiempo de realización de tareas hasta un 95%.</p>
+                    <div style="text-align: center;">
+                        <video width=90% height=100% controls autoplay loop>
+                            <source src="video/video_macros.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="columna2">
+                  <h3><p>Principales clientes</p></h3>
+                  <a href="https://www.kantarworldpanel.com/ar" target="blank"><img class="img-conborde" src="imgs/kantar-logo.png" alt="Kantar"></a>
+                  <a href="http://www.sueldosrh.com.ar/" target="blank"><img class="img-conborde" src="imgs/logo_sueldosRH.png" alt="Sueldos RH"></a>
+                  <a href="http://megatensa.com/tienda" target="blank"><img class="img-conborde" src="imgs/logo_megaten.png" alt="Megaten"></a>
+                  <a href="https://tramando2.mitiendanube.com/?ref=admin_headeres/stores" target="blank"><img class="img-conborde" src="imgs/logo_tramando.png" alt="Tramando"></a>                
+                </div>
+            </div>
+        </main>
+        <!--------------------------------- Info adicional ----------------------------------------------->
+        <aside class="info_adicional">
+            <div>
+                <h4>Información Adicional</h4>
+                <br>
+                    <hr>
+                <br>
+            </div>
+            <div>
+                <p id="infoadicional-titulo">Macros</p>
+                <p id="infoadicional-cuerpo">
+                    Una macro es un conjunto de instrucciones escritas en un lenguaje de programación llamado “Visual Basic para Aplicaciones” (VBA), integrado a Excel. Las macros nos permiten automatizar tareas que se realizan en forma cotidiana, desde colocar formato a una planilla, una simple sumatoria o un informe complejo.
+                </p>
+                <br>
+            </div>
+            <div class="img-centrada">
+                <img src="imgs/macros.png" alt="Macros" width="70%" height="70%">
+            </div>
+            <div>
+                <p id="infoadicional-titulo">¿Por qué usar macros?</p>
+                <p id="infoadicional-cuerpo">
+                    Existen tres variables* que deben considerarse antes de invertir en una macro: <br>
+                    <li id="infoadicional-cuerpo-vinietas">
+                        <b>TRM (Tiempo de Realización Manual)</b>: Es la base del cálculo, es una variable conocida que indica cuánto tiempo estima el cliente que le lleva realizarlo “manualmente” en la computadora.
+                    </li>
+                    <li id="infoadicional-cuerpo-vinietas">
+                        <b>TDP (Tiempo de Diseño y Programación)</b>: Tiene que ver con las tareas que realizará el programador para llevar a cabo el proyecto. Desde las reuniones con cliente, el análisis del caso, desarrollo de interfaces de usuario, la codificación de los procedimientos y el testeo con datos y la consideración de excepciones.
+                    </li>
+                    <li id="infoadicional-cuerpo-vinietas">
+                        <b>TEM (Tiempo de Ejecución de las Macros)</b>: Es aquel que se utilizará en la realización automatizada de los procesos dentro del proyecto. Se obtiene una vez que se han codificado y testeado las macros involucradas.
+                        <br><br> 
+                        * Estas variables no revisten carácter científico y son creadas a modo ilustrativo en función de la experiencia adquirida.
+                    </li>
+                    <div class="img-centrada">
+                        <img src="imgs/tdp_trm_tem_grafico.png" alt="TDP, TRM Y TEM" width="70%" height="70%">
+                    </div>
+                </p>
+            </div>
+        </aside>
+        <!------------------------------------- Pie --------------------------------------------------------->
+        <footer class="footer">
+            <a href="https://www.facebook.com/juanpablo.nardone.3"><i class="fab fa-facebook fa-1x"></i></a>
+            <a href="https://twitter.com/juanpnardone"><i class="fab fa-twitter fa-1x"></i></a>
+            <a href="https://www.linkedin.com/in/juan-pablo-nardone-4a1b3523/"><i class="fab fa-linkedin-in fa-1x"></i></a>
+            <a href="mailto: profjpnardone@gmail.com"><i class="far fa-envelope fa-1x"></i></a>
+            <br>
+            <h3>© Juan Pablo Nardone - Todos los derechos reservados</h3>    
+        </footer>
+    </div>
+    <!------------------------------------- Sript para ocultar los botones de navegación ----------------------->
+    <script>
+        function mostrarocultar()
+        {
+            var ancla = document.getElementsByClassName('botnav');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparecer');
+            }
+        }
+    </script>
+</body>
+</html>

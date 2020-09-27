@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/cf1a0b0945.js" crossorigin="anonymous"></script>
+    <title>Juan Pablo Nardone - Bio</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!----------------------------------------- Encabezado ----------------------------------------->
+        <header class="header">
+            <div>
+                <img class="imgppal" src="imgs/jpn.png" alt="Juan Pablo Nardone" height="7%" width="7%">
+                <h1 class="titulo">Juan Pablo Nardone Fernández - Bio personal</h1>
+            </div>  
+        </header>
+        <!------------------------------------- Barra de navegación ------------------------------------->
+        <nav class="nav">
+            <button class="botnav-menu" onclick="mostrarocultar()">Menú</button>
+            <a class="botnav desaparecer" href="index.html">Inicio</a>
+            <a class="botnav desaparecer" href="academica.html">Formación académica</a>
+            <a class="botnav desaparecer" href="profesional.html">Desarrollo profesional</a>
+            <a class="botnav desaparecer" href="servicios.html">Servicios</a>
+            <a class="botnav desaparecer" href="contacto.html">Contacto</a>
+        </nav>
+        <!------------------------------------- Cuerpo principal ---------------------------------------->
+        <main class="contenido">
+            <!--------------------------------- Formulario ----------------------------------------------->
+            <h1>Formulario de consulta</h1>
+            <p class="texto_formulario">Contactate conmigo para recibir información sobre cursos a particulares o para empresas, así como también para asesoramiento o desarrollo de macros.</p>
+            <br>
+            <div class="contenedor-contacto">
+                <div class="contenedor-contacto-columna1">
+                    <form action="show_data.html" target="_blank">
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" id="firstname" name="Nombre" placeholder="Ingrese su nombre..."><br>
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text" id="lastname" name="Apellido" placeholder="Ingrese su apellido...">   
+                        <p class="texto_formulario">Seleccione el motivo de su consulta:
+                            <select id="motivo_consulta" name="Motivo_consulta">
+                                <option value="clases_particulares">Clases particulares</option>
+                                <option value="capacitacion_empresas">Capacitación a empresas</option>
+                                <option value="asesoramiento">Asesoramiento</option>
+                                <option value="desarrollo_macros">Desarrollo de macros</option>
+                                <option value="otro">Otro motivo (especifique en comentarios))</option>
+                            </select>
+                            </p>
+                            <p class="texto_formulario">Comentarios:
+                            <textarea name="Comentario" id="message" rows="2" cols="30">Ingrese su comentario...</textarea><p>                  
+                        <input class="boton-input" type="submit" value="Enviar">                                
+                    </form>
+                </div>
+                <!--------------------------------- Mapa ----------------------------------------------->
+                <div class="contenedor-contacto-columna2">
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26264.513658410557!2d-58.50230449781327!3d-34.6278176928465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc99546769e49%3A0x4d754ad5ca377710!2sFloresta%2C%20CABA!5e0!3m2!1ses!2sar!4v1601154864945!5m2!1ses!2sar" width=100% height=100% frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--------------------------------- Info adicional ----------------------------------------------->
+        <aside class="info_adicional">
+            <div>
+                <h4>Canales recomendados</h4>
+                <br>
+            </div>
+            <div class="img-centrada">
+                <p class="enlaces-contacto">
+                    <a href="https://codigofacilito.com/" target="blank"><img src="imgs/codigofacilito.png" alt="Codigofacilito" width="70%" height="70%"></a>
+                </p>
+            </div>
+            <div class="img-centrada">
+                <p class="enlaces-contacto">
+                    <a href="https://www.youtube.com/channel/UC7QoKU6bj1QbXQuNIjan82Q" target="blank"><img src="imgs/ATS.png" alt="ATS" width="30%" height="30%"></a>
+                </p>
+            </div>
+            <div class="img-centrada">
+                <p class="enlaces-contacto">
+                    <a href="https://bluuweb.org/" target="blank"><img src="imgs/bluuweb.png" alt="Macros" width="30%" height="30%"></a>
+                </p>
+            </div>
+            <div class="img-centrada">
+                <p class="enlaces-contacto">
+                    <a href="http://www.falconmasters.com/" target="blank"><img src="imgs/FalconMasters.jpg" alt="Macros" width="30%" height="30%"></a>
+                </p>
+            </div>
+        </aside>
+        <!------------------------------------- Pie --------------------------------------------------------->
+        <footer class="footer">
+            <a href="https://www.facebook.com/juanpablo.nardone.3"><i class="fab fa-facebook fa-1x"></i></a>
+            <a href="https://twitter.com/juanpnardone"><i class="fab fa-twitter fa-1x"></i></a>
+            <a href="https://www.linkedin.com/in/juan-pablo-nardone-4a1b3523/"><i class="fab fa-linkedin-in fa-1x"></i></a>
+            <a href="mailto: profjpnardone@gmail.com"><i class="far fa-envelope fa-1x"></i></a>
+            <br>
+            <h3>© Juan Pablo Nardone - Todos los derechos reservados</h3>    
+        </footer>
+    </div>
+    <!------------------------------------- Sript para ocultar los botones de navegación ----------------------->
+    <script>
+        function mostrarocultar()
+        {
+            var ancla = document.getElementsByClassName('botnav');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparecer');
+            }
+        }
+    </script>
+</body>
+</html>
